@@ -1,7 +1,3 @@
-%h1 Editing actividade
-
-= render 'form'
-
-= link_to 'Show', @actividade
-\|
-= link_to 'Back', actividades_path
+= form_for @actividade, :url => actividade_path(@actividade), :html => { :class => "edit_actividade", :id => "edit_actividade" } do |f|
+  %input{:name => "_method", :type => "hidden", :value =>"put"}
+  = render :partial => "form", :locals => {:f => f}

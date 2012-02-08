@@ -1,78 +1,53 @@
-%p#notice= notice
+%label{:class => "label"}= t("activerecord.attributes.alumno.nombre", :default => t("activerecord.labels.nombre", :default => "Nombre")) + ":"
+%p= @alumno.nombre
+%label{:class => "label"}= t("activerecord.attributes.alumno.cuenta", :default => t("activerecord.labels.cuenta", :default => "Cuenta")) + ":"
+%p= @alumno.cuenta
+%label{:class => "label"}= t("activerecord.attributes.alumno.facultad", :default => t("activerecord.labels.facultad", :default => "Facultad")) + ":"
+%p= @alumno.facultad
+%label{:class => "label"}= t("activerecord.attributes.alumno.carrera", :default => t("activerecord.labels.carrera", :default => "Carrera")) + ":"
+%p= @alumno.carrera
+%label{:class => "label"}= t("activerecord.attributes.alumno.semestre", :default => t("activerecord.labels.semestre", :default => "Semestre")) + ":"
+%p= @alumno.semestre
+%label{:class => "label"}= t("activerecord.attributes.alumno.grupo", :default => t("activerecord.labels.grupo", :default => "Grupo")) + ":"
+%p= @alumno.grupo
+%label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "A1")) + ":"
+%p= @alumno.a1
+%label{:class => "label"}= t("activerecord.attributes.alumno.a2", :default => t("activerecord.labels.a2", :default => "A2")) + ":"
+%p= @alumno.a2
+%label{:class => "label"}= t("activerecord.attributes.alumno.a3", :default => t("activerecord.labels.a3", :default => "A3")) + ":"
+%p= @alumno.a3
+%label{:class => "label"}= t("activerecord.attributes.alumno.a4", :default => t("activerecord.labels.a4", :default => "A4")) + ":"
+%p= @alumno.a4
+%label{:class => "label"}= t("activerecord.attributes.alumno.asistencias1", :default => t("activerecord.labels.asistencias1", :default => "Asistencias1")) + ":"
+%p= @alumno.asistencias1
+%label{:class => "label"}= t("activerecord.attributes.alumno.creditos1", :default => t("activerecord.labels.creditos1", :default => "Creditos1")) + ":"
+%p= @alumno.creditos1
+%label{:class => "label"}= t("activerecord.attributes.alumno.b1", :default => t("activerecord.labels.b1", :default => "B1")) + ":"
+%p= @alumno.b1
+%label{:class => "label"}= t("activerecord.attributes.alumno.b2", :default => t("activerecord.labels.b2", :default => "B2")) + ":"
+%p= @alumno.b2
+%label{:class => "label"}= t("activerecord.attributes.alumno.b3", :default => t("activerecord.labels.b3", :default => "B3")) + ":"
+%p= @alumno.b3
+%label{:class => "label"}= t("activerecord.attributes.alumno.b4", :default => t("activerecord.labels.b4", :default => "B4")) + ":"
+%p= @alumno.b4
+%label{:class => "label"}= t("activerecord.attributes.alumno.asistencias2", :default => t("activerecord.labels.asistencias2", :default => "Asistencias2")) + ":"
+%p= @alumno.asistencias2
+%label{:class => "label"}= t("activerecord.attributes.alumno.creditos2", :default => t("activerecord.labels.creditos2", :default => "Creditos2")) + ":"
+%p= @alumno.creditos2
+%label{:class => "label"}= t("activerecord.attributes.alumno.c1", :default => t("activerecord.labels.c1", :default => "C1")) + ":"
+%p= @alumno.c1
+%label{:class => "label"}= t("activerecord.attributes.alumno.c2", :default => t("activerecord.labels.c2", :default => "C2")) + ":"
+%p= @alumno.c2
+%label{:class => "label"}= t("activerecord.attributes.alumno.c3", :default => t("activerecord.labels.c3", :default => "C3")) + ":"
+%p= @alumno.c3
+%label{:class => "label"}= t("activerecord.attributes.alumno.c4", :default => t("activerecord.labels.c4", :default => "C4")) + ":"
+%p= @alumno.c4
+%label{:class => "label"}= t("activerecord.attributes.alumno.asistencias3", :default => t("activerecord.labels.asistencias3", :default => "Asistencias3")) + ":"
+%p= @alumno.asistencias3
+%label{:class => "label"}= t("activerecord.attributes.alumno.creditos3", :default => t("activerecord.labels.creditos3", :default => "Creditos3")) + ":"
+%p= @alumno.creditos3
 
-%p
-  %b Nombre:
-  = @alumno.nombre
-%p
-  %b Cuenta:
-  = @alumno.cuenta
-%p
-  %b Facultad:
-  = @alumno.facultad
-%p
-  %b Carrera:
-  = @alumno.carrera
-%p
-  %b Semestre:
-  = @alumno.semestre
-%p
-  %b Grupo:
-  = @alumno.grupo
-%p
-  %b A1:
-  = @alumno.a1
-%p
-  %b A2:
-  = @alumno.a2
-%p
-  %b A3:
-  = @alumno.a3
-%p
-  %b A4:
-  = @alumno.a4
-%p
-  %b Asistencias1:
-  = @alumno.asistencias1
-%p
-  %b Creditos1:
-  = @alumno.creditos1
-%p
-  %b B1:
-  = @alumno.b1
-%p
-  %b B2:
-  = @alumno.b2
-%p
-  %b B3:
-  = @alumno.b3
-%p
-  %b B4:
-  = @alumno.b4
-%p
-  %b Asistencias2:
-  = @alumno.asistencias2
-%p
-  %b Creditos2:
-  = @alumno.creditos2
-%p
-  %b C1:
-  = @alumno.c1
-%p
-  %b C2:
-  = @alumno.c2
-%p
-  %b C3:
-  = @alumno.c3
-%p
-  %b C4:
-  = @alumno.c4
-%p
-  %b Asistencias3:
-  = @alumno.asistencias3
-%p
-  %b Creditos3:
-  = @alumno.creditos3
-
-= link_to 'Edit', edit_alumno_path(@alumno)
-\|
-= link_to 'Back', alumnos_path
+.form-actions
+  = link_to "Back", alumnos_path, :class => 'btn'
+  = link_to "Edit", edit_alumno_path(@alumno), :class => 'btn'
+  = link_to "Delete", alumno_path(@alumno), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn'

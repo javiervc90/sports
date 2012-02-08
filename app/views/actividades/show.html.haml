@@ -1,18 +1,14 @@
-%p#notice= notice
+%label{:class => "label"}= t("activerecord.attributes.actividade.nombre", :default => t("activerecord.labels.nombre", :default => "Nombre")) + ":"
+%p= @actividade.nombre
+%label{:class => "label"}= t("activerecord.attributes.actividade.administrador", :default => t("activerecord.labels.administrador", :default => "Administrador")) + ":"
+%p= @actividade.administrador
+%label{:class => "label"}= t("activerecord.attributes.actividade.fecha_inicio", :default => t("activerecord.labels.fecha_inicio", :default => "Fecha inicio")) + ":"
+%p= @actividade.fecha_inicio
+%label{:class => "label"}= t("activerecord.attributes.actividade.fecha_termino", :default => t("activerecord.labels.fecha_termino", :default => "Fecha termino")) + ":"
+%p= @actividade.fecha_termino
 
-%p
-  %b Nombre:
-  = @actividade.nombre
-%p
-  %b Administrador:
-  = @actividade.administrador
-%p
-  %b Fecha inicio:
-  = @actividade.fecha_inicio
-%p
-  %b Fecha termino:
-  = @actividade.fecha_termino
-
-= link_to 'Edit', edit_actividade_path(@actividade)
-\|
-= link_to 'Back', actividades_path
+.form-actions
+  = link_to "Back", actividades_path, :class => 'btn'
+  = link_to "Edit", edit_actividade_path(@actividade), :class => 'btn'
+  = link_to "Delete", actividade_path(@actividade), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "¿Esta seguro de eliminar?")}", :class => 'btn'
+= render :partial => 'actividades/alumnos'

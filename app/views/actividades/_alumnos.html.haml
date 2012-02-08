@@ -2,7 +2,7 @@
 %table{:class => "table table-striped"}
   %thead
     %tr
-      %th ID
+      %th Numero de cuenta
       %th
         = t("activerecord.attributes.alumno.nombre", :default => t("activerecord.labels.nombre", :default => "Nombre"))
       %th Created at
@@ -10,7 +10,7 @@
   %tbody
     - @alumnos.each do |alumno|
       %tr
-        %td= alumno.id
+        %td= alumno.cuenta
         %td= link_to alumno.nombre, alumno_path(alumno)
         %td= alumno.created_at
         %td

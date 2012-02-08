@@ -1,24 +1,17 @@
-%p#notice= notice
+%label{:class => "label"}= t("activerecord.attributes.ordinario.asistenciaso", :default => t("activerecord.labels.asistenciaso", :default => "Asistenciaso")) + ":"
+%p= @ordinario.asistenciaso
+%label{:class => "label"}= t("activerecord.attributes.ordinario.creditoso", :default => t("activerecord.labels.creditoso", :default => "Creditoso")) + ":"
+%p= @ordinario.creditoso
+%label{:class => "label"}= t("activerecord.attributes.ordinario.o1", :default => t("activerecord.labels.o1", :default => "O1")) + ":"
+%p= @ordinario.o1
+%label{:class => "label"}= t("activerecord.attributes.ordinario.o2", :default => t("activerecord.labels.o2", :default => "O2")) + ":"
+%p= @ordinario.o2
+%label{:class => "label"}= t("activerecord.attributes.ordinario.o3", :default => t("activerecord.labels.o3", :default => "O3")) + ":"
+%p= @ordinario.o3
+%label{:class => "label"}= t("activerecord.attributes.ordinario.o4", :default => t("activerecord.labels.o4", :default => "O4")) + ":"
+%p= @ordinario.o4
 
-%p
-  %b Asistenciaso:
-  = @ordinario.asistenciaso
-%p
-  %b Creditoso:
-  = @ordinario.creditoso
-%p
-  %b O1:
-  = @ordinario.o1
-%p
-  %b O2:
-  = @ordinario.o2
-%p
-  %b O3:
-  = @ordinario.o3
-%p
-  %b O4:
-  = @ordinario.o4
-
-= link_to 'Edit', edit_ordinario_path(@ordinario)
-\|
-= link_to 'Back', ordinarios_path
+.form-actions
+  = link_to "Back", ordinarios_path, :class => 'btn'
+  = link_to "Edit", edit_ordinario_path(@ordinario), :class => 'btn'
+  = link_to "Delete", ordinario_path(@ordinario), :method => "delete", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}", :class => 'btn'

@@ -1,4 +1,6 @@
 class AlumnosController < ApplicationController
+     http_basic_authenticate_with :name => "deportivas", :password => "cine", :except => :index, :except => :show
+  before_filter :get_actividades
   # GET /alumnos
   # GET /alumnos.json
   def index
@@ -79,5 +81,9 @@ class AlumnosController < ApplicationController
       format.html { redirect_to alumnos_url }
       format.json { head :ok }
     end
+  end
+protected
+  def get_actividades
+    @actividades = Actividade.all
   end
 end

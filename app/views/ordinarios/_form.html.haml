@@ -1,13 +1,29 @@
-= simple_form_for(@ordinario) do |f|
-  = f.error_notification
+.clearfix
+  = f.label :asistenciaso, t("activerecord.attributes.ordinario.asistenciaso", :default => "Asistenciaso"), :class => :label
+  .input
+    = f.number_field :asistenciaso, :class => 'number_field'
+.clearfix
+  = f.label :creditoso, t("activerecord.attributes.ordinario.creditoso", :default => "Creditoso"), :class => :label
+  .input
+    = f.number_field :creditoso, :class => 'number_field'
+.clearfix
+  = f.label :o1, t("activerecord.attributes.ordinario.o1", :default => "O1"), :class => :label
+  .input
+    = f.check_box :o1, :class => 'check_box'
+.clearfix
+  = f.label :o2, t("activerecord.attributes.ordinario.o2", :default => "O2"), :class => :label
+  .input
+    = f.check_box :o2, :class => 'check_box'
+.clearfix
+  = f.label :o3, t("activerecord.attributes.ordinario.o3", :default => "O3"), :class => :label
+  .input
+    = f.check_box :o3, :class => 'check_box'
+.clearfix
+  = f.label :o4, t("activerecord.attributes.ordinario.o4", :default => "O4"), :class => :label
+  .input
+    = f.check_box :o4, :class => 'check_box'
 
-  .inputs
-    = f.input :asistenciaso
-    = f.input :creditoso
-    = f.input :o1
-    = f.input :o2
-    = f.input :o3
-    = f.input :o4
-
-  .actions
-    = f.button :submit
+.form-actions
+  %button{:class => "btn primary", :type => "submit"} Save
+  or
+  = link_to "Cancel", ordinarios_path

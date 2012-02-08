@@ -1,25 +1,21 @@
-%h1 Listing actividades
-
-%table
-  %tr
-    %th Nombre
-    %th Administrador
-    %th Fecha inicio
-    %th Fecha termino
-    %th
-    %th
-    %th
-
-  - @actividades.each do |actividade|
+%h1 Actividades
+%table{:class => "table table-striped"}
+  %thead
     %tr
-      %td= actividade.nombre
-      %td= actividade.administrador
-      %td= actividade.fecha_inicio
-      %td= actividade.fecha_termino
-      %td= link_to 'Show', actividade
-      %td= link_to 'Edit', edit_actividade_path(actividade)
-      %td= link_to 'Destroy', actividade, :confirm => 'Are you sure?', :method => :delete
+      %th ID
+      %th
+        = t("activerecord.attributes.actividade.nombre", :default => t("activerecord.labels.nombre", :default => "Nombre"))
+      %th Created at
+      %th Actions
+  %tbody
+    - @actividades.each do |actividade|
+      %tr
+        %td= actividade.id
+        %td= link_to actividade.nombre, actividade_path(actividade)
+        %td= actividade.created_at
+        %td
+          = link_to "Show", actividade_path(actividade)
+          = link_to "Edit", edit_actividade_path(actividade)
+          = link_to "Destroy", actividade_path(actividade), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
 
-%br
-
-= link_to 'New Actividade', new_actividade_path
+= link_to "New", new_actividade_path, :class => 'btn btn-primary'

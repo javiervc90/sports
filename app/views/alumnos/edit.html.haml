@@ -1,7 +1,3 @@
-%h1 Editing alumno
-
-= render 'form'
-
-= link_to 'Show', @alumno
-\|
-= link_to 'Back', alumnos_path
+= form_for @alumno, :url => alumno_path(@alumno), :html => { :class => "edit_alumno", :id => "edit_alumno" } do |f|
+  %input{:name => "_method", :type => "hidden", :value =>"put"}
+  = render :partial => "form", :locals => {:f => f}

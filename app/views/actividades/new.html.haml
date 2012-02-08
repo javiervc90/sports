@@ -1,5 +1,2 @@
-%h1 New actividade
-
-= render 'form'
-
-= link_to 'Back', actividades_path
+= form_for @actividade, :url => actividades_path, :html => { :class => :form } do |f|
+  = render :partial => "form", :locals => {:f => f}

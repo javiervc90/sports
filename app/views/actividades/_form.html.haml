@@ -1,11 +1,21 @@
-= simple_form_for(@actividade) do |f|
-  = f.error_notification
+.clearfix
+  = f.label :nombre, t("activerecord.attributes.actividade.nombre", :default => "Nombre"), :class => :label
+  .input
+    = f.text_field :nombre, :class => 'text_field'
+.clearfix
+  = f.label :administrador, t("activerecord.attributes.actividade.administrador", :default => "Administrador"), :class => :label
+  .input
+    = f.text_field :administrador, :class => 'text_field'
+.clearfix
+  = f.label :fecha_inicio, t("activerecord.attributes.actividade.fecha_inicio", :default => "Fecha inicio"), :class => :label
+  .input
+    = f.datetime_select :fecha_inicio, :class => 'datetime_select'
+.clearfix
+  = f.label :fecha_termino, t("activerecord.attributes.actividade.fecha_termino", :default => "Fecha termino"), :class => :label
+  .input
+    = f.datetime_select :fecha_termino, :class => 'datetime_select'
 
-  .inputs
-    = f.input :nombre
-    = f.input :administrador
-    = f.input :fecha_inicio
-    = f.input :fecha_termino
-
-  .actions
-    = f.button :submit
+.form-actions
+  %button{:class => "btn primary", :type => "submit"} Save
+  or
+  = link_to "Cancel", actividades_path
