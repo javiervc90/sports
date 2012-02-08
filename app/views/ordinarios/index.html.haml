@@ -1,0 +1,29 @@
+%h1 Listing ordinarios
+
+%table
+  %tr
+    %th Asistenciaso
+    %th Creditoso
+    %th O1
+    %th O2
+    %th O3
+    %th O4
+    %th
+    %th
+    %th
+
+  - @ordinarios.each do |ordinario|
+    %tr
+      %td= ordinario.asistenciaso
+      %td= ordinario.creditoso
+      %td= ordinario.o1
+      %td= ordinario.o2
+      %td= ordinario.o3
+      %td= ordinario.o4
+      %td= link_to 'Show', ordinario
+      %td= link_to 'Edit', edit_ordinario_path(ordinario)
+      %td= link_to 'Destroy', ordinario, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Ordinario', new_ordinario_path

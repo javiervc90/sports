@@ -1,0 +1,25 @@
+%h1 Listing actividades
+
+%table
+  %tr
+    %th Nombre
+    %th Administrador
+    %th Fecha inicio
+    %th Fecha termino
+    %th
+    %th
+    %th
+
+  - @actividades.each do |actividade|
+    %tr
+      %td= actividade.nombre
+      %td= actividade.administrador
+      %td= actividade.fecha_inicio
+      %td= actividade.fecha_termino
+      %td= link_to 'Show', actividade
+      %td= link_to 'Edit', edit_actividade_path(actividade)
+      %td= link_to 'Destroy', actividade, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Actividade', new_actividade_path

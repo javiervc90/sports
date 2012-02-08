@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Nombre:
+  = @actividade.nombre
+%p
+  %b Administrador:
+  = @actividade.administrador
+%p
+  %b Fecha inicio:
+  = @actividade.fecha_inicio
+%p
+  %b Fecha termino:
+  = @actividade.fecha_termino
+
+= link_to 'Edit', edit_actividade_path(@actividade)
+\|
+= link_to 'Back', actividades_path

@@ -1,0 +1,78 @@
+%p#notice= notice
+
+%p
+  %b Nombre:
+  = @alumno.nombre
+%p
+  %b Cuenta:
+  = @alumno.cuenta
+%p
+  %b Facultad:
+  = @alumno.facultad
+%p
+  %b Carrera:
+  = @alumno.carrera
+%p
+  %b Semestre:
+  = @alumno.semestre
+%p
+  %b Grupo:
+  = @alumno.grupo
+%p
+  %b A1:
+  = @alumno.a1
+%p
+  %b A2:
+  = @alumno.a2
+%p
+  %b A3:
+  = @alumno.a3
+%p
+  %b A4:
+  = @alumno.a4
+%p
+  %b Asistencias1:
+  = @alumno.asistencias1
+%p
+  %b Creditos1:
+  = @alumno.creditos1
+%p
+  %b B1:
+  = @alumno.b1
+%p
+  %b B2:
+  = @alumno.b2
+%p
+  %b B3:
+  = @alumno.b3
+%p
+  %b B4:
+  = @alumno.b4
+%p
+  %b Asistencias2:
+  = @alumno.asistencias2
+%p
+  %b Creditos2:
+  = @alumno.creditos2
+%p
+  %b C1:
+  = @alumno.c1
+%p
+  %b C2:
+  = @alumno.c2
+%p
+  %b C3:
+  = @alumno.c3
+%p
+  %b C4:
+  = @alumno.c4
+%p
+  %b Asistencias3:
+  = @alumno.asistencias3
+%p
+  %b Creditos3:
+  = @alumno.creditos3
+
+= link_to 'Edit', edit_alumno_path(@alumno)
+\|
+= link_to 'Back', alumnos_path

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  asistenciaso: 1
+  creditoso: 1
+  o1: false
+  o2: false
+  o3: false
+  o4: false
+
+two:
+  asistenciaso: 1
+  creditoso: 1
+  o1: false
+  o2: false
+  o3: false
+  o4: false

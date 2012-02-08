@@ -1,0 +1,65 @@
+%h1 Listing alumnos
+
+%table
+  %tr
+    %th Nombre
+    %th Cuenta
+    %th Facultad
+    %th Carrera
+    %th Semestre
+    %th Grupo
+    %th A1
+    %th A2
+    %th A3
+    %th A4
+    %th Asistencias1
+    %th Creditos1
+    %th B1
+    %th B2
+    %th B3
+    %th B4
+    %th Asistencias2
+    %th Creditos2
+    %th C1
+    %th C2
+    %th C3
+    %th C4
+    %th Asistencias3
+    %th Creditos3
+    %th
+    %th
+    %th
+
+  - @alumnos.each do |alumno|
+    %tr
+      %td= alumno.nombre
+      %td= alumno.cuenta
+      %td= alumno.facultad
+      %td= alumno.carrera
+      %td= alumno.semestre
+      %td= alumno.grupo
+      %td= alumno.a1
+      %td= alumno.a2
+      %td= alumno.a3
+      %td= alumno.a4
+      %td= alumno.asistencias1
+      %td= alumno.creditos1
+      %td= alumno.b1
+      %td= alumno.b2
+      %td= alumno.b3
+      %td= alumno.b4
+      %td= alumno.asistencias2
+      %td= alumno.creditos2
+      %td= alumno.c1
+      %td= alumno.c2
+      %td= alumno.c3
+      %td= alumno.c4
+      %td= alumno.asistencias3
+      %td= alumno.creditos3
+      %td= link_to 'Show', alumno
+      %td= link_to 'Edit', edit_alumno_path(alumno)
+      %td= link_to 'Destroy', alumno, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Alumno', new_alumno_path

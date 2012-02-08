@@ -1,0 +1,13 @@
+= simple_form_for(@ordinario) do |f|
+  = f.error_notification
+
+  .inputs
+    = f.input :asistenciaso
+    = f.input :creditoso
+    = f.input :o1
+    = f.input :o2
+    = f.input :o3
+    = f.input :o4
+
+  .actions
+    = f.button :submit

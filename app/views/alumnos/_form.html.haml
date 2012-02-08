@@ -1,0 +1,31 @@
+= simple_form_for(@alumno) do |f|
+  = f.error_notification
+
+  .inputs
+    = f.input :nombre
+    = f.input :cuenta
+    = f.input :facultad
+    = f.input :carrera
+    = f.input :semestre
+    = f.input :grupo
+    = f.input :a1
+    = f.input :a2
+    = f.input :a3
+    = f.input :a4
+    = f.input :asistencias1
+    = f.input :creditos1
+    = f.input :b1
+    = f.input :b2
+    = f.input :b3
+    = f.input :b4
+    = f.input :asistencias2
+    = f.input :creditos2
+    = f.input :c1
+    = f.input :c2
+    = f.input :c3
+    = f.input :c4
+    = f.input :asistencias3
+    = f.input :creditos3
+
+  .actions
+    = f.button :submit
