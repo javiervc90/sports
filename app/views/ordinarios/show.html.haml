@@ -1,16 +1,32 @@
-%label{:class => "label"}= t("activerecord.attributes.ordinario.asistenciaso", :default => t("activerecord.labels.asistenciaso", :default => "Asistenciaso")) + ":"
-%p= @ordinario.asistenciaso
-%label{:class => "label"}= t("activerecord.attributes.ordinario.creditoso", :default => t("activerecord.labels.creditoso", :default => "Creditoso")) + ":"
-%p= @ordinario.creditoso
-%label{:class => "label"}= t("activerecord.attributes.ordinario.o1", :default => t("activerecord.labels.o1", :default => "O1")) + ":"
-%p= @ordinario.o1
-%label{:class => "label"}= t("activerecord.attributes.ordinario.o2", :default => t("activerecord.labels.o2", :default => "O2")) + ":"
-%p= @ordinario.o2
-%label{:class => "label"}= t("activerecord.attributes.ordinario.o3", :default => t("activerecord.labels.o3", :default => "O3")) + ":"
-%p= @ordinario.o3
-%label{:class => "label"}= t("activerecord.attributes.ordinario.o4", :default => t("activerecord.labels.o4", :default => "O4")) + ":"
-%p= @ordinario.o4
+%center
+  %h2= @ordinario.nombre
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      
+      %th 
+        %label{:class => "label"}= t("activerecord.attributes.ordinario.asistenciaso", :default => t("activerecord.labels.asistenciaso", :default => "Asistencias")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.ordinario.creditoso", :default => t("activerecord.labels.creditoso", :default => "Creditos")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.ordinario.o1", :default => t("activerecord.labels.o1", :default => "P1")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.ordinario.o1", :default => t("activerecord.labels.o1", :default => "P2")) + ":"
 
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.ordinario.o1", :default => t("activerecord.labels.o1", :default => "P3")) + ":"
+
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.ordinario.o1", :default => t("activerecord.labels.o1", :default => "P4")) + ":"
+
+  %tbody
+    %tr
+      %td= @ordinario.asistenciaso
+      %td= @ordinario.creditoso
+      %td= @ordinario.o1
+      %td= @ordinario.o2
+      %td= @ordinario.o3
+      %td= @ordinario.o4
 .form-actions
   = link_to "Back", ordinarios_path, :class => 'btn'
   = link_to "Edit", edit_ordinario_path(@ordinario), :class => 'btn'

@@ -14,6 +14,7 @@ class OrdinariosController < ApplicationController
   # GET /ordinarios/1.json
   def show
     @ordinario = Ordinario.find(params[:id])
+    @alumnos = @ordinario.alumnos
 
     respond_to do |format|
       format.html # show.html.erb

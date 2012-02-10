@@ -1,6 +1,7 @@
 class AlumnosController < ApplicationController
      http_basic_authenticate_with :name => "deportivas", :password => "cine", :except => :index, :except => :show
   before_filter :get_actividades
+  before_filter :get_ordinarios
   # GET /alumnos
   # GET /alumnos.json
   def index
@@ -85,5 +86,8 @@ class AlumnosController < ApplicationController
 protected
   def get_actividades
     @actividades = Actividade.all
+  end
+  def get_ordinarios
+    @ordinarios = Ordinario.all
   end
 end

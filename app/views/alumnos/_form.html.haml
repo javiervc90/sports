@@ -1,41 +1,62 @@
-.clearfix
-  = f.label :actividades, t("activerecord.attributes.actividade.nombre", :default => "Actividades"), :class => :label
-  .input
-    = f.collection_select(:actividade_id, @actividades, :id, :nombre, { :class => 'text_field input' })
+%table  
+  %thead
+    %tr
+      %th
+        = f.label :actividades, t("activerecord.attributes.actividade.nombre", :default => "Actividades"), :class => :label
+        = f.collection_select(:actividade_id, @actividades, :id, :nombre, { :class => 'text_field input' }) 
+    %tr
+      %th
+        = f.label :nombre, t("activerecord.attributes.alumno.nombre", :default => "Nombre"), :class => :label
+        = f.text_field :nombre, :class => 'text_field'
+    %tr
+      %th
+        = f.label :cuenta, t("activerecord.attributes.alumno.cuenta", :default => "Numero de Cuenta"), :class => :label
+        = f.text_field :cuenta, :class => 'text_field'
+    %tr
+      %th
+        = f.label :facultad, t("activerecord.attributes.alumno.facultad", :default => "Facultad"), :class => :label
+        = f.text_field :facultad, :class => 'text_field'
+    %tr
+      %th
+        = f.label :carrera, t("activerecord.attributes.alumno.carrera", :default => "Carrera"), :class => :label
+        = f.text_field :carrera, :class => 'text_field'
+    %tr
+      %th
+        = f.label :semestre, t("activerecord.attributes.alumno.semestre", :default => "Semestre"), :class => :label
+        = f.text_field :semestre, :class => 'text_field'
+    %tr
+      %th
+        = f.label :grupo, t("activerecord.attributes.alumno.grupo", :default => "Grupo"), :class => :label
+        = f.text_field :grupo, :class => 'text_field'
+    %tr
+      %th
+        = f.label :asistencias1, t("activerecord.attributes.alumno.asistencias1", :default => "Asistencias Parcial 1"), :class => :label
+        = f.number_field :asistencias1, :class => 'number_field'
+    %tr
+      %th
+        = f.label :creditos1, t("activerecord.attributes.alumno.creditos1", :default => "Creditos Parcial 1"), :class => :label
+        = f.number_field :creditos1, :class => 'number_field'
+    %tr
+      %th
+        = f.label :asistencias2, t("activerecord.attributes.alumno.asistencias2", :default => "Asistencias Parcial 2"), :class => :label
+        = f.number_field :asistencias2, :class => 'number_field'
+    %tr
+      %th
+        = f.label :creditos2, t("activerecord.attributes.alumno.creditos2", :default => "Creditos Parcial 2"), :class => :label
+        = f.number_field :creditos2, :class => 'number_field'
+    
+      
 
+   
 .clearfix
-  = f.label :nombre, t("activerecord.attributes.alumno.nombre", :default => "Nombre"), :class => :label
-  .input
-    = f.text_field :nombre, :class => 'text_field'
-.clearfix
-  = f.label :cuenta, t("activerecord.attributes.alumno.cuenta", :default => "Cuenta"), :class => :label
-  .input
-    = f.text_field :cuenta, :class => 'text_field'
-.clearfix
-  = f.label :facultad, t("activerecord.attributes.alumno.facultad", :default => "Facultad"), :class => :label
-  .input
-    = f.text_field :facultad, :class => 'text_field'
-.clearfix
-  = f.label :carrera, t("activerecord.attributes.alumno.carrera", :default => "Carrera"), :class => :label
-  .input
-    = f.text_field :carrera, :class => 'text_field'
-.clearfix
-  = f.label :semestre, t("activerecord.attributes.alumno.semestre", :default => "Semestre"), :class => :label
-  .input
-    = f.text_field :semestre, :class => 'text_field'
-.clearfix
-  = f.label :grupo, t("activerecord.attributes.alumno.grupo", :default => "Grupo"), :class => :label
-  .input
-    = f.text_field :grupo, :class => 'text_field'
-.clearfix
-  = f.label :a1, t("activerecord.attributes.alumno.a1", :default => "P1 P2 P3 P4 " + ".................." + " Asistencias Parcial 1" + "..................." + "Creditos Parcial 1"), :class => :label
+  = f.label :a1, t("activerecord.attributes.alumno.a1", :default => "P1 P2 P3 P4 "), :class => :label
   .input
     = f.check_box :a1, :class => 'check_box'
     = f.check_box :a2, :class => 'check_box'
     = f.check_box :a3, :class => 'check_box'
     = f.check_box :a4, :class => 'check_box'
-    = f.number_field :asistencias1, :class => 'number_field'
-    = f.number_field :creditos1, :class => 'number_field'
+    
+    
       
 .clearfix
   = f.label :b1, t("activerecord.attributes.alumno.b1", :default => "P1 P2 P3 P4"), :class => :label
@@ -44,15 +65,7 @@
     = f.check_box :b2, :class => 'check_box'
     = f.check_box :b3, :class => 'check_box'
     = f.check_box :b4, :class => 'check_box'
-.clearfix
-  = f.label :asistencias2, t("activerecord.attributes.alumno.asistencias2", :default => "Asistencias Parcial 2"), :class => :label
-  .input
-    = f.number_field :asistencias2, :class => 'number_field'
-.clearfix
-  = f.label :creditos2, t("activerecord.attributes.alumno.creditos2", :default => "Creditos Parcial 2"), :class => :label
-  .input
-    = f.number_field :creditos2, :class => 'number_field'
-.clearfix
+
   = f.label :c1, t("activerecord.attributes.alumno.c1", :default => "P1 P2 P3 P4"), :class => :label
   .input
     = f.check_box :c1, :class => 'check_box'

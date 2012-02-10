@@ -5,6 +5,7 @@ Sports::Application.routes.draw do
 
   resources :actividades
 
+  root :to => 'actividades#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
