@@ -1,22 +1,31 @@
-.clearfix
-  = f.label :nombre, t("activerecord.attributes.ordinario.nombre", :default => "Nombre de la actividad"), :class => :label
-  .input
-    = f.text_field :nombre, :class => 'text_field'
-.clearfix
-  = f.label :asistenciaso, t("activerecord.attributes.ordinario.asistenciaso", :default => "Asistencias Ordinario"), :class => :label
-  .input
-    = f.number_field :asistenciaso, :class => 'number_field'
-.clearfix
-  = f.label :creditoso, t("activerecord.attributes.ordinario.creditoso", :default => "Creditos Ordinario"), :class => :label
-  .input
-    = f.number_field :creditoso, :class => 'number_field'
-.clearfix
-  = f.label :o1, t("activerecord.attributes.ordinario.o1", :default => "P1 P2 P3 P4"), :class => :label
-  .input
-    = f.check_box :o1, :class => 'check_box'
-    = f.check_box :o2, :class => 'check_box'
-    = f.check_box :o3, :class => 'check_box'
-    = f.check_box :o4, :class => 'check_box'
+%table
+  %tr
+    %td
+      = f.label :nombre, t("activerecord.attributes.ordinario.nombre", :default => "Nombre de la actividad"), :class => :label
+  %tr
+    %td
+      = f.text_field :nombre, :class => 'text_field'
+  %tr
+    %td
+      = f.label :asistenciaso, t("activerecord.attributes.ordinario.asistenciaso", :default => "Asistencias Ordinario"), :class => :label
+  %tr
+    %td
+      = f.number_field :asistenciaso, :class => 'number_field'
+  %tr
+    %td
+      = f.label :creditoso, t("activerecord.attributes.ordinario.creditoso", :default => "Creditos Ordinario"), :class => :label
+  %tr
+    %td
+      = f.number_field :creditoso, :class => 'number_field'
+  %tr
+    %td
+      = f.label :o1, t("activerecord.attributes.ordinario.o1", :default => "P1 P2 P3 P4"), :class => :label
+  %tr
+    %td
+      = f.check_box :o1, :class => 'check_box'
+      = f.check_box :o2, :class => 'check_box'
+      = f.check_box :o3, :class => 'check_box'
+      = f.check_box :o4, :class => 'check_box'
 
 .form-actions
   %button{:class => "btn primary", :type => "submit"} Save

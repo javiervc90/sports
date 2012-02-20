@@ -1,11 +1,16 @@
-.clearfix
-  = f.label :nombre, t("activerecord.attributes.actividade.nombre", :default => "Nombre"), :class => :label
-  .input
-    = f.text_field :nombre, :class => 'text_field'
-.clearfix
-  = f.label :administrador, t("activerecord.attributes.actividade.administrador", :default => "Administrador"), :class => :label
-  .input
-    = f.text_field :administrador, :class => 'text_field'
+%table
+  %tr
+    %td
+      = f.label :nombre, t("activerecord.attributes.actividade.nombre", :default => "Nombre"), :class => :label
+  %tr
+    %td
+      = f.text_field :nombre, :class => 'text_field'
+  %tr
+    %td
+      = f.label :administrador, t("activerecord.attributes.actividade.administrador", :default => "Administrador"), :class => :label
+  %tr
+    %td
+      = f.text_field :administrador, :class => 'text_field'
 .clearfix
   = f.label :fecha_inicio, t("activerecord.attributes.actividade.fecha_inicio", :default => "Fecha inicio"), :class => :label
   .input
