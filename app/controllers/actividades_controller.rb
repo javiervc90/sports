@@ -1,4 +1,5 @@
 class ActividadesController < ApplicationController
+  http_basic_authenticate_with :name => "actividades", :password => "actividades", :except => :index, :except => :show
   # GET /actividades
   # GET /actividades.json
   def index
