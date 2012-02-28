@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #CCCC8E;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -24,6 +24,7 @@ a {
     background-color: #000; } }
 
 div {
+    
   &.field, &.actions {
     margin-bottom: 10px; } }
 

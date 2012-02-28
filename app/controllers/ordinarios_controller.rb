@@ -1,5 +1,5 @@
 class OrdinariosController < ApplicationController
-  http_basic_authenticate_with :name => "ordinarios", :password => "ordinarios", :except => :index, :except => :show
+  #http_basic_authenticate_with :name => "ordinarios", :password => "ordinarios", :except => :index, :except => :show
   # GET /ordinarios
   # GET /ordinarios.json
   def index
