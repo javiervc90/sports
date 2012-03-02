@@ -2,29 +2,17 @@
   %thead
     %tr
       %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.nombre", :default => t("activerecord.labels.nombre", :default => "Nombre")) + ":"
-        %p= @alumno.nombre
-    %tr
+        %label{:class => "label"}= t("activerecord.attributes.alumno.nombre", :default => t("activerecord.labels.nombre", :default => "Nombre")) + ":"           
       %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.cuenta", :default => t("activerecord.labels.cuenta", :default => "Cuenta")) + ":"
-        %p= @alumno.cuenta
-    %tr
+        %label{:class => "label"}= t("activerecord.attributes.alumno.cuenta", :default => t("activerecord.labels.cuenta", :default => "Cuenta")) + ":"            
       %th
         %label{:class => "label"}= t("activerecord.attributes.alumno.facultad", :default => t("activerecord.labels.facultad", :default => "Facultad")) + ":"
-        %p= @alumno.facultad
-    %tr
       %th
         %label{:class => "label"}= t("activerecord.attributes.alumno.carrera", :default => t("activerecord.labels.carrera", :default => "Carrera")) + ":"
-        %p= @alumno.carrera
-    %tr
       %th
         %label{:class => "label"}= t("activerecord.attributes.alumno.semestre", :default => t("activerecord.labels.semestre", :default => "Semestre")) + ":"
-        %p= @alumno.semestre
-    %tr
       %th
         %label{:class => "label"}= t("activerecord.attributes.alumno.grupo", :default => t("activerecord.labels.grupo", :default => "Grupo")) + ":"
-        %p= @alumno.grupo
-    %tr
       %th
         %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P1")) + ":"
       %th
@@ -33,7 +21,53 @@
         %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P3")) + ":"
       %th
         %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P4")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.asistencias1", :default => t("activerecord.labels.asistencias1", :default => "Asistencias1")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos1", :default => t("activerecord.labels.creditos1", :default => "Creditos1")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P1")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P2")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P3")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P4")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.asistencias2", :default => t("activerecord.labels.asistencias2", :default => "Asistencias2")) + ":"
+        
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos2", :default => t("activerecord.labels.creditos2", :default => "Creditos2")) + ":"        
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P1")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P2")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P3")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P4")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.asistencias3", :default => t("activerecord.labels.asistencias3", :default => "Asistencias3")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos3", :default => t("activerecord.labels.creditos3", :default => "Creditos3")) + ":"
+      %th
+        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos3", :default => t("activerecord.labels.creditos3", :default => "Creditos totales")) + ":"
+        
+
+  %tbody
     %tr
+      %td
+        %p= @alumno.nombre
+      %td
+        %p= @alumno.cuenta
+      %td
+        %p= @alumno.facultad
+      %td
+        %p= @alumno.carrera
+      %td
+        %p= @alumno.semestre
+      %td
+        %p= @alumno.grupo
       %td
         %p= @alumno.a1
       %td
@@ -42,24 +76,10 @@
         %p= @alumno.a3
       %td
         %p= @alumno.a4
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.asistencias1", :default => t("activerecord.labels.asistencias1", :default => "Asistencias1")) + ":"
+      %td
         %p= @alumno.asistencias1
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos1", :default => t("activerecord.labels.creditos1", :default => "Creditos1")) + ":"
+      %td
         %p= @alumno.creditos1
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P1")) + ":"
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P2")) + ":"
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P3")) + ":"
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P4")) + ":"
-    %tr
       %td
         %p= @alumno.b1
       %td
@@ -68,24 +88,10 @@
         %p= @alumno.b3
       %td
         %p= @alumno.b4
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.asistencias2", :default => t("activerecord.labels.asistencias2", :default => "Asistencias2")) + ":"
+      %td
         %p= @alumno.asistencias2
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos2", :default => t("activerecord.labels.creditos2", :default => "Creditos2")) + ":"
+      %td
         %p= @alumno.creditos2
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P1")) + ":"
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P2")) + ":"
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P3")) + ":"
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.a1", :default => t("activerecord.labels.a1", :default => "P4")) + ":"
-    %tr
       %td
         %p= @alumno.c1
       %td
@@ -94,15 +100,11 @@
         %p= @alumno.c3
       %td
         %p= @alumno.c4
-
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.asistencias3", :default => t("activerecord.labels.asistencias3", :default => "Asistencias3")) + ":"
+      %td
         %p= @alumno.asistencias3
-    %tr
-      %th
-        %label{:class => "label"}= t("activerecord.attributes.alumno.creditos3", :default => t("activerecord.labels.creditos3", :default => "Creditos3")) + ":"
+      %td
         %p= @alumno.creditos3
+    
 
 .form-actions
   = link_to "Back", alumnos_path, :class => 'btn'

@@ -1,5 +1,5 @@
 class AlumnosController < ApplicationController
-     http_basic_authenticate_with :name => "deportivas", :password => "cine", :except => :index, :except => :show
+     http_basic_authenticate_with :name => "alumnos", :password => "estudiantes", :except => :index, :except => :show
   before_filter :get_actividades
   before_filter :get_ordinarios
   # GET /alumnos
