@@ -21,12 +21,18 @@
 
   %tbody
     %tr
-      %td= @ordinario.asistenciaso
-      %td= @ordinario.creditoso
-      %td= @ordinario.o1
-      %td= @ordinario.o2
-      %td= @ordinario.o3
-      %td= @ordinario.o4
+      %td
+        %p= @ordinario.asistenciaso
+      %td
+        %p= @ordinario.creditoso
+      %td 
+        %p= @ordinario.o1
+      %td
+        %p= @ordinario.o2
+      %td
+        %p= @ordinario.o3
+      %td
+        %p= @ordinario.o4
 .form-actions
   = link_to "Back", ordinarios_path, :class => 'btn'
   = link_to "Edit", edit_ordinario_path(@ordinario), :class => 'btn'

@@ -11,9 +11,9 @@
   %tbody
     - @ordinarios.each do |ordinario|
       %tr
-        %td= ordinario.nombre
+        %td= link_to ordinario.nombre, ordinario_path(ordinario)
         %td= ordinario.id
-        %td= link_to ordinario.asistenciaso, ordinario_path(ordinario)
+        %td= ordinario.asistenciaso
         %td= ordinario.created_at
         %td
           = link_to "Show", ordinario_path(ordinario)
