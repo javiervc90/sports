@@ -1,4 +1,6 @@
 class Alumno < ActiveRecord::Base
+	attr_accessible	:nombre
+	attr_accessible :cuenta
 	belongs_to :actividade
 	has_one :ordinario
 
@@ -11,4 +13,7 @@ class Alumno < ActiveRecord::Base
 	validates :cuenta, :presence => true
 	validates :semestre, :presence => true
 
+	#validations for credits and assistances
+
+	#validates :
 end
