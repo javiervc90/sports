@@ -1,7 +1,7 @@
 #slideshow #slideshowWindow{
 
 	width: 900px;
-	height: 257px;
+	height: 500px;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -14,7 +14,7 @@
 	margin: 0;
 	padding: 0;
 	width: 900px;
-	height: 257px;
+	height: 500px;
 	float: left;
 	position: relative;
 
@@ -24,7 +24,7 @@
 #slideshow #slideshowWindow .slide .slideText { 
 
 	position:absolute; 
-	top:130px; 
+	top:400px; 
 	left:0px; 
 	width:93%; 
 	height:130px; 
@@ -63,7 +63,7 @@
 
 #leftNav { 
 
-	top:223px; 
+	top:500px; 
 	left:660px; 
 	width:94px; 
 	height:34px; 
@@ -74,7 +74,7 @@
 
 #rightNav { 
 
-	top:225px; 
+	top:500px; 
 	left:760px; 
 	width:53px; 
 	height:26px; 
