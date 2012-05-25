@@ -7,7 +7,7 @@ gem 'rails', '3.1.1'
 
 
 gem "heroku"
-gem 'json'
+gem 'json'	
 gem 'haml-rails'
 gem 'simple_form'
 gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
@@ -16,7 +16,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg'
+  #gem 'pg'
   gem 'thin'
 end
 
