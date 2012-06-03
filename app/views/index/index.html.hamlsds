@@ -1,0 +1,43 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %title Tabbed jQuery slideshow
+    %link{:href => "css/slideshow.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js", :type => "text/javascript"}
+    %script{:src => "jquery.cycle.js", :type => "text/javascript"}
+    %script{:src => "slideshow.js", :type => "text/javascript"}
+  %body
+    #slideshow
+      .slides
+        %ul
+          %li#slide-one
+            %h2 Slide one
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec pretium arcu non velit. Phasellus adipiscing auctor
+              lorem. Curabitur in urna ut purus consequat sollicitudin.
+              
+
+          %li#slide-two
+            %h2 Slide two
+            %p
+              Nam ac nibh sit amet augue ultricies sagittis. Donec sit
+              amet nunc. Vivamus lacinia, nisi ac tincidunt commodo, purus
+              nisi condimentum urna, sit amet molestie odio dolor non lectus.
+              
+          %li#slide-three
+            %h2 Slide three
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse adipiscing dui a nibh. Integer tristique lorem
+              vitae massa. Etiam dapibus, eros sit amet euismod semper,
+              felis erat congue lacus, sed aliquam metus libero sed elit.
+          
+      %ul.slides-nav
+        %li.on
+          %a{:href => "#slide-one"} Slide one
+        %li
+          %a{:href => "#slide-two"} Slide two
+        %li
+          %a{:href => "#slide-three"} Slide three
+        
