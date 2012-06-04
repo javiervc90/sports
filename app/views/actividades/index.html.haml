@@ -1,4 +1,11 @@
-%h1 Actividades
+#navigation
+  #menu
+    %ul
+      %li= link_to "Alumnos", alumnos_path
+      %li= link_to "Actividades", actividades_path
+      %li= link_to "Ordinarios", ordinarios_path
+%center
+  %h1 Actividades
 %table{:class => "table table-striped"}
   %thead
     %tr
