@@ -1,6 +1,7 @@
 #navigation
   #menu
     %ul
+      %li= link_to "Acreditaciones", "/"
       %li= link_to "Alumnos", alumnos_path
       %li= link_to "Actividades", actividades_path
       %li= link_to "Ordinarios", ordinarios_path
@@ -8,6 +9,7 @@
   %h1 Actividades
 %table{:class => "table table-striped"}
   %thead
+  #table
     %tr
       %th ID
       %th
@@ -15,8 +17,10 @@
       %th Created at
       %th Actions
   %tbody
+
     - @actividades.each do |actividade|
       %tr
+      
         %td= actividade.id
         %td= link_to actividade.nombre, actividade_path(actividade)
         %td= actividade.created_at

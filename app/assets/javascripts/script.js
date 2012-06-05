@@ -8,35 +8,35 @@ var slideshowSpeed = 6000;
 // Variable to store the images we need to set as background
 // which also includes some text and url's.
 var photos = [ {
-		"title" : "Stairs",
+		"title" : "Loras U de C",
 		"image" : "loras.jpg",
 		"url" : "http://www.sxc.hu/photo/1271909",
-		"firstline" : "Going on",
-		"secondline" : "vacation?"
+		/*"firstline" : "Going on",*/
+		"secondline" : "Futbol Soccer"
 	}, {
-		"title" : "Office Appartments",
+		"title" : "Cocierto Musical",
 		"image" : "rondalla.jpg",
 		"url" : "http://www.sxc.hu/photo/1265695",
-		"firstline" : "Or still busy at",
-		"secondline" : "work?"
+		/*"firstline" : "Or still busy at",*/
+		"secondline" : "Rondalla Universitaria"
 	}, {
-		"title" : "Mountainbiking",
+		"title" : "Loras Universitarias",
 		"image" : "loritas.jpg",
 		"url" : "http://www.sxc.hu/photo/1221065",
-		"firstline" : "Get out and be",
-		"secondline" : "active"
+		/*"firstline" : "Get out and be",*/
+		"secondline" : "Futbol soccer femenil"
 	}, {
-		"title" : "Mountains Landscape",
+		"title" : "Estudiantes Club de Ciclismo",
 		"image" : "loros2.jpg",
 		"url" : "http://www.sxc.hu/photo/1271915",
-		"firstline" : "Take a fresh breath of",
-		"secondline" : "nature"
+		/*"firstline" : "Take a fresh breath of",*/
+		"secondline" : "Ciclismo"
 	}, {
-		"title" : "Italian pizza",
+		"title" : "Bicipaseo Fime",
 		"image" : "fime.jpg",
 		"url" : "http://www.sxc.hu/photo/1042413",
-		"firstline" : "Enjoy some delicious",
-		"secondline" : "food"
+		/* "firstline" : "Enjoy some delicious",*/
+		"secondline" : "Bicipaseos"
 	}
 ];
 

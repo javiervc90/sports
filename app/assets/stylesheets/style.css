@@ -29,6 +29,7 @@ body { background-color:#1b2940; font:62.5% Georgia,'Times New Roman',serif; let
 #menu ul li a:hover { text-decoration:underline; }
 
 #table th { font-weight:bold; color:white}
+#td { font-weight:bold}
 /* HEADER TEXT */
 #headertxt { width:960px; margin:0 auto; clear:both; position:relative; top:74px; }
 #firstline { background-image:url("assets/textbg.png"); color:#333; font-size:40px; padding:4px 13px 7px; float:left; display:block; }
@@ -40,7 +41,7 @@ body { background-color:#1b2940; font:62.5% Georgia,'Times New Roman',serif; let
 .pictured a:hover { text-decoration:underline; }
 
 /* CONTROLS */
-.btn { height:32px; width:32px; float:left; cursor:pointer; }
+/*#boton{ height:32px; width:32px; float:left; cursor:pointer; }*/
 #back { background-image:url("assets/btn_back.png"); }
 #next { background-image:url("assets/btn_next.png"); }
 #control { background-image:url("assets/btn_pause.png"); }
